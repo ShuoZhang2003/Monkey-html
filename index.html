@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo_monkey.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhang Li</a><sup>1&#10013</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Biao Yang</a><sup>1&#10013</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Qiang Liu</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Zhiyin Ma</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Shuo Zhang</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Jingxu Yang</a><sup>2</sup>,</span>
+                          <span class="author-block">
+                            <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Yabo Sun</a><sup>2</sup>,</span><br>
+                            <span class="author-block">
+                              <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Yuliang Liu</a><sup>1*</sup>,</span>
+                              <span class="author-block">
+                              <a href="NINTH AUTHOR PERSONAL LINK" target="_blank">Xiang Bai</a><sup>1*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology <sup>2</sup>Kingsoft<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*&#10013</sup>Indicates Equal Contribution;<sup>*</sup>corresponding authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2311.06607.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                  <!-- Demo link -->
+                  <span class="link-block">
+                    <a href="http://27.17.184.224:7680/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-desktop"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+
+                <!-- Demo link -->
+                <span class="link-block">
+                  <a href="http://27.17.184.224:7681/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                  </span>
+                  <span>Demo_chat</span>
+                </a>
+              </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com//Yuliang-Liu/Monkey" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.06607" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Multimodal Models (LMMs) have shown promise in vision-language tasks but struggle with high-resolution input and detailed scene understanding. Addressing these challenges, we introduce Monkey to enhance LMM capabilities. Firstly, Monkey processes input images by dividing them into uniform patches, each matching the size (e.g., 448×448) used in the original training of the welltrained vision encoder. Equipped with individual adapter for each patch, Monkey can handle higher resolutions up to 1344×896 pixels, enabling the detailed capture of complex visual information. Secondly, it employs a multi-level description generation method, enriching the context for scene-object associations. This two-part strategy ensures more effective learning from generated data: the higher resolution allows for a more detailed capture of visuals, which in turn enhances the effectiveness of comprehensive descriptions. Extensive ablative results validate the effectiveness of our designs. Additionally, experiments on 18 datasets further demonstrate that Monkey surpasses existing LMMs in many tasks like Image Captioning and various Visual Question Answering formats. Specially, in qualitative tests focused on dense text question answering, Monkey has exhibited encouraging results compared with GPT4V. Code is available at https://github.com/Yuliang-Liu/Monkey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Methods</h2>
+      <div id="results-carousel" class="d-flex justify-content-center align-items-center">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/figure1.png" alt="MY ALT TEXT"/>
+          <div class="content has-text-justified">
+            <p style="text-indent:2em;">
+              Given an image <i>I</i> &#8712 &#8477<sup><i>H x W x 3</i></sup>, we employ a sliding window <i>W</i> &#8712 &#8477<sup><i>H<sub>v</sub> x W<sub>v</sub></i></sup> (where <i>H<sub>v</sub></i> , <i>W<sub>v</sub></i> denote the supported resolution of the original LMM) to partition the image into smaller, local sections. We also leverage LoRA within each shared encoder to address the varied visual elements in different parts of an image. This integration of LoRA is to help our encoders to recognize and assimilate detail-sensitive features from each image area effectively, which enhances the understanding of spatial and contextual relationships without a substantial increase in parameters or computational demand.
+            </p>
+            <p style="text-indent:2em;">
+              To preserve the overall structural information of input image, we resize the original image to dimensions (<i>H<sub>v</sub></i>, <i>W<sub>v</sub></i>),  maintaining it as a global image. Following this, both the individual patches and the global image are processed through the visual encoder and resampler concurrently. Here, the visual resampler, inspired by Flamingo, is a mechanism that performs two main functions: summarizing visual information and obtaining higher semantic visual representations in a language feature space. It achieves this by leveraging a cross-attention module. The module employs trainable vectors (embeddings) as query vectors, along with image features from the visual encoder serving as keys for cross-attention operations.
+            </p>
+            <p style="text-indent:2em;">
+              This approach strikes a balance between detailed and holistic perspectives of the images, thereby enhancing the model performance while avoiding a substantial increase in computational demand.
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/figure2.png" alt="MY ALT TEXT"/>
+          <div class="content has-text-justified">
+            <p style="text-indent:2em;">
+              As shown in the picture above, the image description process begins with BLIP2 creating overall captions using a Q-former for tight integration with the vision encoder and LLM, while retaining original CC3M annotations for context. Next, GRIT, a region-to-text model, generates detailed descriptions of specific regions, objects, and their characteristics. PPOCR extracts text from the images, and SAM segments and identifies objects and their parts. These objects are then individually described by BLIP2. However, to counter potential inaccuracies from these tools, especially in zero-shot settings, we find it essential to further use BLIP2 to check for consistency between image areas, objects, and their descriptions, filtering out low-scoring matches. Finally, all data, including global captions, localized descriptions, text extracts, and object details with spatial coordinates, are fed into the ChatGPT API for fine-tuning, enabling ChatGPT to generate accurate and contextually rich image descriptions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Cases</h2>
+      <div id="results-carousel" class="carousel results-carousel align-items-center">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/caption.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Monkey can accurately describe the details in the image.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/dense_text_1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Monkey performs particularly well in dense text question answering tasks.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/dense_text_2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Monkey performs particularly well in dense text question answering tasks.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/qa_caption.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Monkey also performs equally well in daily life scenes.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Video carousel ->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Display of Demo_chat</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!- Your video file here ->
+            <source src="static/videos/caption.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!- Your video file here ->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <!- Your video file here ->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!- End video carousel -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{li2023monkey,
+        title={Monkey: Image Resolution and Text Label Are Important Things for Large Multi-modal Models},
+        author={Li, Zhang and Yang, Biao and Liu, Qiang and Ma, Zhiyin and Zhang, Shuo and Yang, Jingxu and Sun, Yabo and Liu, Yuliang and Bai, Xiang},
+        journal={arXiv preprint arXiv:2311.06607},
+        year={2023}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
