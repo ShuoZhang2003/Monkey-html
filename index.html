@@ -186,7 +186,7 @@
           <img src="static/images/figure2.png" alt="MY ALT TEXT"/>
           <div class="content has-text-justified">
             <p style="text-indent:2em;">
-              As shown in the picture above, the image description process begins with BLIP2 creating overall captions using a Q-former for tight integration with the vision encoder and LLM, while retaining original CC3M annotations for context. Next, GRIT, a region-to-text model, generates detailed descriptions of specific regions, objects, and their characteristics. PPOCR extracts text from the images, and SAM segments and identifies objects and their parts. These objects are then individually described by BLIP2. However, to counter potential inaccuracies from these tools, especially in zero-shot settings, we find it essential to further use BLIP2 to check for consistency between image areas, objects, and their descriptions, filtering out low-scoring matches. Finally, all data, including global captions, localized descriptions, text extracts, and object details with spatial coordinates, are fed into the ChatGPT API for fine-tuning, enabling ChatGPT to generate accurate and contextually rich image descriptions.
+              At present, most of the large-scale image and text data sets come from online crawling, such as COYO, CC3M, etc. The simple image and text descriptions in these data sets no longer meet the Monkey's large resolution requirements. Therefore, Monkey filters the global description, regional frame and corresponding description, segmentation map and corresponding description of the image and sends them to ChatGPT to generate a detailed description of the image to meet the needs of Monkey's large resolution.
             </p>
           </div>
         </div>
