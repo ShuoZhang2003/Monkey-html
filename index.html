@@ -175,7 +175,10 @@
           <img src="static/images/figure1.png" alt="MY ALT TEXT"/>
           <div class="content has-text-justified">
             <p style="text-indent:2em;">
-             The input resolution of most LMMs is limited by the CLIP model (224×224). Monkey proposes a simple and effective method to increase the input resolution. Compared with the method of directly expanding the resolution for training, Monkey has more advantages in time and performance. By dividing the image into smaller local areas and adding an independent LoRA to each local area to capture detail-sensitive features, thereby establishing spatial and contextual connections between blocks, Monkey will also input the original image into the model to obtain the global information of the image.
+              The input resolution of most LMMs is limited by the CLIP model (224×224). Monkey proposes a simple and effective method to increase the input resolution. Compared with the method of directly expanding the resolution for training, Monkey has more advantages in time and performance. 
+            </p>
+            <p style="text-indent:2em;">
+              By dividing the image into smaller local areas and adding an independent LoRA to each local area to capture detail-sensitive features, thereby establishing spatial and contextual connections between blocks, Monkey will also input the original image into the model to obtain the global information of the image.
             </p>
           </div>
         </div>
@@ -201,27 +204,13 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Cases</h2>
+      <h2 class="title is-3">Performance</h2>
       <div id="results-carousel" class="carousel results-carousel align-items-center">
         <div class="item">
           <!-- Your image here -->
           <img src="static/images/caption.png" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
             Monkey can accurately describe the details in the image.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/dense_text_1.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Monkey performs particularly well in dense text question answering tasks.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/dense_text_2.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Monkey performs particularly well in dense text question answering tasks.
           </h2>
         </div>
         <div class="item">
@@ -237,6 +226,116 @@
 </div>
 </section>
 <!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison</h2>
+      <div id="results-carousel" class="carousel results-carousel align-items-center">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/dense_text_1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle">
+            Monkey performs particularly well in dense text question answering tasks. 
+            For example, in the dense text of item labels, Monkey can accurately answer various information about the item, and its performance is very impressive compared to other LMMs including GPT4V.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/dense_text_2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle">
+            Monkey performs particularly well in dense text question answering tasks. 
+            For example, in the dense text of item labels, Monkey can accurately answer various information about the item, and its performance is very impressive compared to other LMMs including GPT4V.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/compare.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle">
+            Monkey exhibits a unique capability to focus on fine text details that set it apart from other LLMs. 
+            For instance, in the left picture, only GPT-4V and Monkey can discern the obscured "Emporio Armani" among numerous storefronts. 
+            In the right picture, Monkey alone recognizes the presence of the artist Aja in the lower left corner. 
+            This distinctive attention to nuanced textual elements underscores Monkey's advanced observational skills, making it stand out in scenarios where other models may fall short.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Display of demo_chat -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="pics6">
+        <h2 class="title is-3">Display of demo_chat</h2>
+        <div id="status3_pics">
+          <ul class="pics6_status3">
+              <li>
+                  <img class="status3-pic" src="static/videos/QA.GIF">
+                  <div>QA</div>
+              </li>
+              <li>
+                  <img class="status3-pic" src="static/videos/caption.GIF">
+                  <div>caption</div>
+              </li>
+              <li>
+                <img class="status3-pic" src="static/videos/text.GIF">
+                <div>text</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Display of demo_chat -->
+
+<!-- Text Label -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Text Label</h2>
+      <div id="results-carousel" class="d-flex justify-content-center align-items-center">
+        <div class="item">
+          <!-- Your image here -->
+          <div class="content has-text-justified">
+            <p style="text-indent:2em;">
+              The figure below shows the comparison between the annotation obtained by using the detailed description generation method using multi-level feature fusion and the original CC3M annotation. It is not difficult to see that there is a large gap between the two annotations. The generated detailed annotation contains as much as possible Various details in the picture are not mentioned in one sentence like CC3M's original annotation. Using such high-quality image and text data for training enables Monkey to better grasp the relationship between images and text.
+            </p>
+          </div>
+          <img src="static/images/text_label.png" alt="MY ALT TEXT"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Text Label -->
+
+
+<!-- Display of demo_chat ->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Display of demo_chat</h2>
+      <div id="results-carousel" class="carousel results-carousel align-items-center">
+        <div class="item">
+          <img src="static/videos/QA.GIF" alt="MY ALT TEXT"/>
+        </div>
+        <div class="item">
+          <img src="static/videos/caption.GIF" alt="MY ALT TEXT"/>
+        </div>
+        <div class="item">
+          <img src="static/videos/text.GIF" alt="MY ALT TEXT"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!- End Display of demo_chat -->
 
 
 <!-- Video carousel ->
