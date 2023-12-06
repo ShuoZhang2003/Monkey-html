@@ -175,13 +175,7 @@
           <img src="static/images/figure1.png" alt="MY ALT TEXT"/>
           <div class="content has-text-justified">
             <p style="text-indent:2em;">
-              Given an image <i>I</i> &#8712 &#8477<sup><i>H x W x 3</i></sup>, we employ a sliding window <i>W</i> &#8712 &#8477<sup><i>H<sub>v</sub> x W<sub>v</sub></i></sup> (where <i>H<sub>v</sub></i> , <i>W<sub>v</sub></i> denote the supported resolution of the original LMM) to partition the image into smaller, local sections. We also leverage LoRA within each shared encoder to address the varied visual elements in different parts of an image. This integration of LoRA is to help our encoders to recognize and assimilate detail-sensitive features from each image area effectively, which enhances the understanding of spatial and contextual relationships without a substantial increase in parameters or computational demand.
-            </p>
-            <p style="text-indent:2em;">
-              To preserve the overall structural information of input image, we resize the original image to dimensions (<i>H<sub>v</sub></i>, <i>W<sub>v</sub></i>),  maintaining it as a global image. Following this, both the individual patches and the global image are processed through the visual encoder and resampler concurrently. Here, the visual resampler, inspired by Flamingo, is a mechanism that performs two main functions: summarizing visual information and obtaining higher semantic visual representations in a language feature space. It achieves this by leveraging a cross-attention module. The module employs trainable vectors (embeddings) as query vectors, along with image features from the visual encoder serving as keys for cross-attention operations.
-            </p>
-            <p style="text-indent:2em;">
-              This approach strikes a balance between detailed and holistic perspectives of the images, thereby enhancing the model performance while avoiding a substantial increase in computational demand.
+             The input resolution of most LMMs is limited by the CLIP model (224×224). Monkey proposes a simple and effective method to increase the input resolution. Compared with the method of directly expanding the resolution for training, Monkey has more advantages in time and performance. By dividing the image into smaller local areas and adding an independent LoRA to each local area to capture detail-sensitive features, thereby establishing spatial and contextual connections between blocks, Monkey will also input the original image into the model to obtain the global information of the image.
             </p>
           </div>
         </div>
